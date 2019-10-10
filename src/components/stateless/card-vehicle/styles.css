@@ -1,0 +1,143 @@
+
+.container{
+  background: #fff;
+}
+
+
+.title{
+  color: #000;
+  border: 0px solid #000;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.price{
+  color:rgb(70,70,70);
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.description{
+  color:rgb(80,80,80);
+  font-weight: 500;
+  font-size: 1.2em;
+   overflow: hidden;
+   text-overflow: ellipsis;
+  max-height: 66px;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and  (min-width : 768px){
+
+}
+
+@media screen and (min-width: 1024px) {
+  .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .title{
+    border: 0px solid #000;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-top: 20px;
+  }
+  .price{
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .info{
+    border-right: 1px solid rgb(241,241,241);
+    width: calc(100% - 1px);
+  }
+
+  .image{
+  	width: 100%;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .description{
+    text-align: center;
+    padding: 30px;
+    padding-top:0px;
+  }
+}
+
+@media screen and (min-width : 768px) and (max-width : 1023px){
+  .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 50%!important;
+  }
+
+  .image{
+  	width: 100%;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .image img{
+    width: 100%;
+  }
+  .info{
+    border-right: 1px solid rgb(241,241,241);
+    width: calc(100% - 1px);
+  }
+  .title{
+    border: 0px solid #000;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-top: 20px;
+  }
+  .price{
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .description{
+    text-align: center;
+    padding: 30px;
+    padding-top:0px;
+  }
+}
+
+
+@media screen and (min-width : 0px) and (max-width : 767px){
+
+  .container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px;
+    height: 150px;
+  }
+  .image{
+    height: 100%;
+  	width: 200px;
+    overflow: hidden;
+  }
+  .image img{
+    height: 100%;
+  }
+  .price{
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+    width: calc(100% - 200px);
+    border-bottom: 1px solid rgb(241,241,241);
+    height: 100%;
+  }
+}
